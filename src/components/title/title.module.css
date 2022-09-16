@@ -1,0 +1,36 @@
+.title {
+    position: relative;
+    color: var(--background-color);
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+  }
+  .title::before, .title::after{
+    content: "";
+    display: block;
+    background-color: white;
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+  }
+  .title span::before, .title span::after{
+      content: "";
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: var(--background-color);
+      position: absolute;
+      transform: rotate(45deg);
+      top: -5px;
+      right: -20px;
+  }
+  .title span::after{
+    left: -20px;
+  }
+  .title::after{
+    top: auto;
+    bottom: 0px;
+    background-color: white;
+  }
