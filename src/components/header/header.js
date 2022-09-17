@@ -1,5 +1,5 @@
 import Dwk from  "../DWK/dwk"
-import MenuDelicious from '../../assets/menudelicious.js'
+import MenuDelicious from '../../assets/menuD/menudelicious.js'
 import classes from './header.module.css'
 import menuSide from '../../assets/menu-side.png'
 

@@ -10,6 +10,6 @@ const Price = props=>(
 
 Price.defaultProps = {
     price : 50
-}
+} 
 
 export default Price
