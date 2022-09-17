@@ -1,0 +1,29 @@
+.detail{
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    position: relative;
+    border: 2px solid #29ce65;
+    border-radius: 5px;
+    border-right: none;
+    padding-bottom: 25px;
+}
+.detail h4{
+    margin-bottom: 7px;
+}
+
+.detail p{
+    font-size: .8rem;
+}
+.detail img{
+    width: 35%;
+    right: -35px;
+    position: absolute;
+    top: -35%;
+}
+
+@media screen and (max-width: 450px){
+    .detail{
+        padding-left: 0;
+    }
+}

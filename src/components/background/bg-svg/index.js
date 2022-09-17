@@ -1,0 +1,6 @@
+export  { default as Cherry } from './cherry'
+export  { default as Donut } from './donut'
+export  { default as  Donut1 } from './donut1'
+export  { default as Leaf } from './leaf'
+export  { default as Leaf1 } from './leaf1'
+export  { default as Watermelon } from './watermelon'

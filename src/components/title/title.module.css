@@ -3,12 +3,13 @@
     color: var(--background-color);
     text-align: center;
     max-width: 300px;
-    margin: auto;
+    margin: 1rem auto;
+
   }
   .title::before, .title::after{
     content: "";
     display: block;
-    background-color: white;
+    background-color: var(--text-color);
     height: 20px;
     width: 100%;
     position: absolute;
@@ -32,5 +33,5 @@
   .title::after{
     top: auto;
     bottom: 0px;
-    background-color: white;
+    background-color: var(--text-color);
   }

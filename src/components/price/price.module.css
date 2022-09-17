@@ -1,0 +1,13 @@
+.dashed{
+    flex-grow: 1;
+    margin-bottom: 5px;
+    border-bottom: 2px dashed;
+
+}
+.price {
+    display: flex;
+    padding: 3px 0px;
+}
+.price p{
+    padding: 0px 5px;
+}
