@@ -8,7 +8,6 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
 }
 body {
   background-color: var(--background-color);
@@ -27,53 +26,10 @@ body {
   padding: 1rem 0;
 }
 
-.listBlock {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    margin: 3rem auto;
-}
-.listBlock > div{
-    width: 50%;
-}
-.listBlock:nth-child(3n) > div:first-child{
-  order: 2;
-}
-.listBlock:nth-child(3n) img{
-  left: -35px;
-}
-
-.listBlock:nth-child(3n) > div:last-child{
-  border: 2px solid var(--border-color);
-  border-left: none;
-}
-
 @media screen and (max-width : 450px){
   .restraint{
     max-width: 100%;
     padding: 1rem; 
-  }
-  .listBlock{
-    flex-direction: column;
-  }
-  .listBlock div:first-child{
-    order: 2;
-  }
-  .listBlock > div:first-child{
-    margin-left: auto;
-    width: 70%;
-  }
-  .listBlock > div:last-child{
-    margin-right: auto;
-    width: 70%;
-  }
-  .listBlock:nth-child(3n) img{
-    left: -10px;
-  }
-  .listBlock:nth-child(3n) > div:last-child{
-    padding-right: 0;
-    padding-left: 25px;
   }
 }
 
@@ -82,21 +38,7 @@ body {
     max-width: 100%;
     padding:  0;
   }
-  .listBlock > div:first-child,.listBlock > div:last-child{
-    width: 90%;
-    max-width: 100%;
-  }
-  .listBlock:nth-child(n) > div:last-child{
-    border: 2px solid var(--border-color);
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    padding: 5px;
-  }
-  .listBlock:nth-child(n) img{
-      position: static;
-      order: 1;
-  }
+ 
   body{
     overflow-x: hidden;
   }

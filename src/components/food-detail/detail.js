@@ -1,12 +1,18 @@
 import classes from './detail.module.css'
 
-const foodDetail = props =>(
+const FoodDetail = props =>{
+  return (
     <div className={classes.detail}>             
     <div> <h4>{props.title}</h4>
      <p> {props.children}</p>
      </div>
-     <img src={props.src} alt=""/>
+     <img  data-aos={classes.scaleUpCenter} style={{ top : props.top}} src={props.src} alt=""/>
   </div>
-)
+  )
+}
+
+FoodDetail.defaultProps = {
+    top : ''
+}
  
-export default foodDetail;
+export default FoodDetail;

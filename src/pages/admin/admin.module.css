@@ -1,0 +1,59 @@
+
+.h2{
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+.addMore{
+    cursor: pointer;
+}
+.addMore span{
+    background-color: black;
+
+}
+.addMore svg{
+    transition: transform 200ms ease-out, fill 100ms linear;
+}
+.addMore:hover svg{
+    transform: rotate(45deg);
+    fill: #539ec4;
+}
+.borderLeft {
+    border-left: 2px solid gray;
+}
+
+button[type='submit']{
+    color: var(--text-color);
+}
+.cardSelector{
+    border:4px solid transparent;
+    transition: border-colors 100ms ease-in, background-color 50ms linear;
+    cursor: pointer;
+}
+.active{
+    border-color : #4bbf73 ;
+    background-color: #f3f3f3;
+}
+.removeVariation{
+    position: relative;
+}
+.removeVariation::before {
+    content: " ";
+    cursor: pointer;
+    display: flex;
+    width: 0px;
+    transition: width 200ms ease-out;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.removeVariation:hover::before  {
+    content : " - ";
+    width: 100%;
+}

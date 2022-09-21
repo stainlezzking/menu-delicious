@@ -3,6 +3,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: .5rem 0;
     font-weight: normal;
+    color : var(--text-color)
 }
 .reverse {
     transform: rotate(180deg);

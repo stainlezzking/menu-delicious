@@ -42,9 +42,8 @@
 }
 .grow::before, .grow::after{
   width: 100%;
-  animation-name: shadow;
-  animation-duration: 100ms;
-  animation-delay: 300ms;
+  animation: shadow;
+  animation-duration: 600ms;
   animation-timing-function: ease-in-out;
 }
 
