@@ -1,6 +1,6 @@
 .dashed{
     flex-grow: 1;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     border-bottom: 2px dashed;
 
 }
@@ -10,4 +10,9 @@
 }
 .price p{
     padding: 0px 5px;
+}
+@media screen and (max-width : 400px){
+    .dashed{
+        margin-bottom: 25px;
+    }
 }

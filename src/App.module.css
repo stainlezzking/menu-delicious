@@ -15,6 +15,9 @@ body {
   color: var(--text-color);
   position: relative;
 }
+button:disabled{
+  cursor: not-allowed;
+}
 
 .App{
   max-width: 800px;

@@ -6,9 +6,13 @@ import { useEffect, useState } from 'react';
 import Front from './pages/front/front';
 import Admin from './pages/admin/admin';
 import {Button} from 'react-bootstrap' 
+import { useSelector, useDispatch } from 'react-redux'
+import {switchRoute} from './store/UI_reduces'
+
 function App() {
-  
-    const [homeRoute, setHomeRoute] = useState(true)
+      const menus = useSelector(state=> state.menuReducer)
+      const homeRoute = useSelector(state=> state.UIreducer.homeRoute)
+      const dispatch = useDispatch()
   useEffect(()=>{
     AOS.init({
       useClassNames: true,
@@ -24,12 +28,12 @@ function App() {
         <div className={classes.restraint}>
            <Header />
             <nav>
-            <Button onClick={()=> setHomeRoute(e=> !e)} title="login as admin" variant="success" className="mx-auto d-block"> { homeRoute ? 'Admin' : "Menu's"} </Button>
+            <Button onClick={()=> dispatch(switchRoute())} title={homeRoute ? "login as admin" : "Logout of Admin"} variant="success" className="mx-auto d-block"> { homeRoute ? 'Admin' : "Menu's"} </Button>
              </nav>
            <div style={{
              marginTop : '40px'
            }}>
-              {homeRoute ? <Front /> : <Admin />}
+              {homeRoute ? <Front menus={menus} /> : <Admin changeRoute={()=>dispatch(switchRoute())} addMenu={dispatch}/>}
            </div>
            
         </div>
