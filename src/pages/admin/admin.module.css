@@ -59,15 +59,17 @@ button[type='submit']{
     width: 100%;
 }
 
-.alertClass{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50%;
-    opacity : 0;
-    z-index: 1;
-    transition: opacity 2000ms ease-in;
+.itemEnter {
+    opacity: 0;
 }
-.entering{
-    opacity: 1;
+.itemEnterActive {
+opacity: 1;
+transition: opacity 500ms ease-in;
+}
+.itemExit {
+opacity: 1;
+}
+.itemExitActive {
+opacity: 0;
+transition: opacity 500ms ease-in;
 }

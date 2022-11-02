@@ -11,8 +11,8 @@ const initialState = [
         variations : [
             { title : "Margherita Pizza", price : 10},
             { title : "Meaty treat", price : 15},
-            { title : "Jumbo", price : 23}
-        ]
+            { title : "Jumbo", price : 23},
+        ],
     },
     {
         title : "Sex on beach",
@@ -22,7 +22,8 @@ const initialState = [
             { title : "Change this shit", price : 15},
             { title : "Chilled", price : 10},
             { title : "With ice", price : 23}
-        ] 
+        ] ,
+
     },{
         title : "Burger",
         description : "The best Meaty Burger you can get",
@@ -31,7 +32,7 @@ const initialState = [
             { title : "Chicken Burger", price : 15},
             { title : "Beaf treat", price : 10},
             { title : "Vegies", price : 7}
-        ]
+        ],
     }
 ]
 

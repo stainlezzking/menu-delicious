@@ -13,7 +13,7 @@ import classes from './admin.module.css'
 import Subtitle from '../../components/title/title'
 import { useRef, useState, useReducer, useEffect} from 'react';
 import {ADD_MENU} from "../../store/action_values"
-import { Transition } from 'react-transition-group'
+import {CSSTransition,TransitionGroup} from 'react-transition-group';
 
 const checkValidity = function(object, array){
     let initialValidity = true;
@@ -39,7 +39,6 @@ const Admin = ({addMenu, changeRoute}) => {
     const [initialLoad, setInitialLoad] = useState(false)
     const selectRef = useRef(null)
     const [error, setError] = useState({error: "", title : ""})
-    const nodeRef = useRef(null);
     const [showAlert, setShowAlert] = useState(false)
     const formInitialState = {
         title :{
@@ -211,6 +210,7 @@ useEffect(()=>{
             {
                 formState.variations.inputs.map((variation, index)=>{
                     return(
+                   
                     <InputGroup key={index} className={classes.zeroOpacity + ' my-2 ' + classes.fadeIn}>
                         <Form.Control
                         style={ !initialLoad || variation.valid ? {} : invalidStyle}
